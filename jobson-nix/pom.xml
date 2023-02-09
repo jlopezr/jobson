@@ -19,12 +19,12 @@
             <artifactId>jobson</artifactId>
             <version>1.0.14</version>
         </dependency>
-        <dependency>
+	<!--<dependency>
             <groupId>com.github.jobson</groupId>
             <artifactId>jobson-docs</artifactId>
             <version>1.0.14</version>
             <type>tar.gz</type>
-        </dependency>
+	</dependency>-->
         <dependency>
             <groupId>com.github.jobson</groupId>
             <artifactId>jobson-ui</artifactId>
@@ -52,6 +52,7 @@
                         </configuration>
                     </execution>
 
+		    <!--
                     <execution>
                         <id>unpack-docs</id>
                         <phase>validate</phase>
@@ -60,16 +61,17 @@
                         </goals>
 
                         <configuration>
-                            <artifactItems>
+				<artifactItems>
                                 <artifactItem>
                                     <groupId>com.github.jobson</groupId>
                                     <artifactId>jobson-docs</artifactId>
                                     <type>tar.gz</type>
                                     <outputDirectory>${project.build.directory}/dependencies/jobson-docs</outputDirectory>
                                 </artifactItem>
-                            </artifactItems>
+				</artifactItems>
                         </configuration>
-                    </execution>
+			</execution>
+			-->
 
                     <execution>
                         <id>unpack-ui</id>

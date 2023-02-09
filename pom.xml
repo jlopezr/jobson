@@ -139,7 +139,7 @@
 
         <!-- Documentation -->
         <module>jobson-swagger-ui</module>
-        <module>jobson-docs</module>
+		<!--<module>jobson-docs</module>-->
 
         <!-- Packaging -->
         <module>jobson-deb</module>
